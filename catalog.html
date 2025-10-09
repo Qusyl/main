@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>Каталог товаров «Nexum»</title>
-    </head>
-    <body>
-        <header class="header-site">
-            <h1>Каталог товаров</h1>
-        </header>
-        <div class="cards">
-            <article class="card">
-                <img src="images/hours.png" width="64" height="64">
-                <h3>Почасовая аренда</h3>
-                <p>Описание: Арендуйте место на 1 и более часов (плата за каждый час). </p>
-            </article>
-
-            <article class="card">
-                <img src="images/days.png" width="64" height="64">
-                <h3>Долгосрочная аренда</h3>
-                <p>Описание: Арундуйте место на 1 и более дней (плата предусмотрена за каждый день).</p>
-            </article>
-
-            <article class="card">
-                <img src="images/tournaments.png" width="64" height="64">
-                <h3>Организация турниров и мероприятий</h3>
-                <p>Описание: Организуйте свой турнир или игровое мероприятие (цена по специальному тарифу).</p>
-            </article>
-
-            <article class="card">
-                <img src="images/vr.png" width="64" height="64">
-                <h3>Аренда VR арены</h3>
-                <p>Описание: Окунитесь в незабываемое погружение в VR среду с использованием самого современнного оборудования.</p>
-            </article>
-            
-            <p><a class="main" href="index.html">На главную</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров - Сеть кибер клубов «Nexum»</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="site-logo" href="index.html">
+                <img src="images/nexum-logo.png" alt="Nexum Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О Nexum</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="price.html">Цены и услуги</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
-    </body>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="catalog-section">
+                <h1 class="main-title">Каталог услуг</h1>
+                <p class="section-description">Выберите подходящий формат игрового времени</p>
+                
+                <div class="catalog-cards">
+                    <article class="catalog-card">
+                        <div class="card-icon">
+                            <img src="images/hours.png" alt="Иконка часов" width="64" height="64">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Почасовая аренда</h3>
+                            <p class="card-description">Арендуйте место на 1 и более часов (плата за каждый час). Идеально для коротких игровых сессий.</p>
+                            <ul class="card-features">
+                                <li>Гибкий график</li>
+                                <li>Минимальное время - 1 час</li>
+                                <li>Возможность продления</li>
+                            </ul>
+                        </div>
+                        <div class="card-actions">
+                            <a href="price.html#hourly" class="details-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="catalog-card">
+                        <div class="card-icon">
+                            <img src="images/days.png" alt="Иконка календаря" width="64" height="64">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Долгосрочная аренда</h3>
+                            <p class="card-description">Арендуйте место на 1 и более дней (плата предусмотрена за каждый день). Выгодно для длительных игр.</p>
+                            <ul class="card-features">
+                                <li>Экономия до 20%</li>
+                                <li>Гарантированное место</li>
+                                <li>Бесплатные напитки</li>
+                            </ul>
+                        </div>
+                        <div class="card-actions">
+                            <a href="price.html#daily" class="details-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="catalog-card">
+                        <div class="card-icon">
+                            <img src="images/tournaments.png" alt="Иконка турнира" width="64" height="64">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Организация турниров и мероприятий</h3>
+                            <p class="card-description">Организуйте свой турнир или игровое мероприятие (цена по специальному тарифу).</p>
+                            <ul class="card-features">
+                                <li>Аренда всего зала</li>
+                                <li>Профессиональное оборудование</li>
+                                <li>Техническая поддержка</li>
+                                <li>Организация трансляции</li>
+                            </ul>
+                        </div>
+                        <div class="card-actions">
+                            <a href="price.html" class="details-button">Обсудить проект</a>
+                        </div>
+                    </article>
+
+                    <article class="catalog-card">
+                        <div class="card-icon">
+                            <img src="images/vr.png" alt="Иконка VR очков" width="64" height="64">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Аренда VR арены</h3>
+                            <p class="card-description">Окунитесь в незабываемое погружение в VR среду с использованием самого современного оборудования.</p>
+                            <ul class="card-features">
+                                <li>Современные VR шлемы</li>
+                                <li>Пространство для перемещения</li>
+                                <li>Более 50 VR игр</li>
+                                <li>Инструктаж и поддержка</li>
+                            </ul>
+                        </div>
+                        <div class="card-actions">
+                            <a href="price.html" class="details-button">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="navigation-links">
+                <a class="back-link button" href="index.html">На главную</a>
+            </div>
+        </div>
+    </main>
+</body>
 </html>

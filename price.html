@@ -1,43 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>Цены и услуги</title>
-    </head>
-    <body>
-        <header class="header-site">
-            <h1>Прайс‑лист</h1>
-            <table border="2" cellpadding="8" cellspacing="0">
-            <thead>
-                <tr>
-                    <th style="background-color:#4CAF50; color:white;">Наименование</th>
-                    <th style="background-color:#2196F3; color:white;">Описание</th>
-                    <th style="background-color:#FF9800; color:white;">Цена (₽)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="background-color:#E8F5E9;">1 час аренды</td>
-                    <td style="background-color:#E3F2FD;">Оформить аренду на час, с возможностью продления</td>
-                    <td style="background-color:#FFF3E0;">80</td>
-                </tr>
-                <tr>
-                    <td style="background-color:#E8F5E9;">1 день аренды</td>
-                    <td style="background-color:#E3F2FD;">Оформить аренду на день, с возможностью продления</td>
-                    <td style="background-color:#FFF3E0;">1500</td>
-                </tr>
-                <tr>
-                    <td style="background-color:#E8F5E9;">Турниры</td>
-                    <td style="background-color:#E3F2FD;">Организуйте турнир или мероприятие</td>
-                    <td style="background-color:#FFF3E0;">по договору</td>
-                </tr>
-                <tr>
-                    <td style="background-color:#E8F5E9;">VR</td>
-                    <td style="background-color:#E3F2FD;">Оформить аренду VR арены (стоимость за час)</td>
-                    <td style="background-color:#FFF3E0;">200</td>
-                </tr>
-            </tbody>
-        </table>
-        </header>
-            <p><a class="main" href="index.html">На главную</a></p> 
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены и услуги - Сеть кибер клубов «Nexum»</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="site-logo" href="index.html">
+                <img src="images/nexum-logo.png" alt="Nexum Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О Nexum</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="price.html">Цены и услуги</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="pricing-section">
+                <h1 class="main-title">Прайс-лист</h1>
+                <p class="section-description">Выберите подходящий вариант аренды для вашего игрового опыта</p>
+                
+                <div class="pricing-cards">
+                    <div class="price-card">
+                        <div class="card-header">
+                            <h3 class="service-name">1 час аренды</h3>
+                            <div class="price">80 ₽</div>
+                        </div>
+                        <div class="card-body">
+                            <p class="service-description">Оформить аренду на час, с возможностью продления</p>
+                            <ul class="service-features">
+                                <li>Доступ к игровому ПК</li>
+                                <li>Высокоскоростной интернет</li>
+                                <li>Комфортное кресло</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="order-button">Забронировать</button>
+                        </div>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="card-header">
+                            <h3 class="service-name">1 день аренды</h3>
+                            <div class="price">1500 ₽</div>
+                        </div>
+                        <div class="card-body">
+                            <p class="service-description">Оформить аренду на день, с возможностью продления</p>
+                            <ul class="service-features">
+                                <li>Неограниченный доступ 24/7</li>
+                                <li>Скидка 20% по сравнению с почасовой оплатой</li>
+                                <li>Бесплатные напитки</li>
+                                <li>Приоритетная техподдержка</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="order-button">Забронировать</button>
+                        </div>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="card-header">
+                            <h3 class="service-name">VR арена</h3>
+                            <div class="price">200 ₽/час</div>
+                        </div>
+                        <div class="card-body">
+                            <p class="service-description">Оформить аренду VR арены</p>
+                            <ul class="service-features">
+                                <li>Современное VR оборудование</li>
+                                <li>Пространство для перемещения</li>
+                                <li>Более 50 VR игр на выбор</li>
+                                <li>Инструктаж и помощь оператора</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="order-button">Забронировать</button>
+                        </div>
+                    </div>
+
+                    <div class="price-card highlighted">
+                        <div class="card-header">
+                            <h3 class="service-name">Организация турниров</h3>
+                            <div class="price">по договору</div>
+                        </div>
+                        <div class="card-body">
+                            <p class="service-description">Организуйте турнир или мероприятие</p>
+                            <ul class="service-features">
+                                <li>Аренда всего зала</li>
+                                <li>Профессиональная техподдержка</li>
+                                <li>Организация трансляции</li>
+                                <li>Призовой фонд</li>
+                                <li>Фото и видео сопровождение</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="order-button">Обсудить проект</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="additional-info">
+                <h2 class="section-title">Дополнительная информация</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>Скидки и акции</h3>
+                        <p>Приведи друга и получи скидку 20% на следующий визит. Студентам - постоянная скидка 10%.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Бронь мест</h3>
+                        <p>Рекомендуем бронировать места заранее, особенно в вечернее время и выходные дни.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Правила клуба</h3>
+                        <p>Соблюдение чистоты и тишины в общих зонах. Возрастное ограничение 16+ после 22:00.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="navigation-links">
+                <a class="back-link" href="index.html">На главную</a>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
