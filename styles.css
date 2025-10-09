@@ -255,18 +255,7 @@ body {
     position: relative;
 }
 .price-card
-.price-card.highlighted::before {
-    content: "Популярно";
-    position: absolute;
-    top: -10px;
-    right: 20px;
-    background: #00ff00;
-    color: #1a1a1a;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
+
 
 .card-header {
     text-align: center;
